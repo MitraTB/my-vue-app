@@ -1,0 +1,18 @@
+<template>
+  <b-col md="4" class="m-3">
+    <div>
+      <b-card title="List Product">
+        <b-card-text> </b-card-text>
+        
+      </b-card>
+    </div>
+  </b-col>
+</template>
+<script>
+export default {
+    
+}
+</script>
+<style>
+
+</style>
