@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "name": "training shoe",
+      "price": "$250",
+      "brand": "Nike",
+      "inventoryStatus": false,
+      "id": 1
+    },
+    {
+      "name": "T-shirt",
+      "price": "$200",
+      "brand": "Addidas",
+      "inventoryStatus": true,
+      "id": 2
+    },
+    {
+      "name": "refrigerator",
+      "price": "$560",
+      "brand": "LG",
+      "inventoryStatus": false,
+      "id": 3
+    },
+    {
+      "name": "Glasses",
+      "price": "$320",
+      "brand": "Raban",
+      "inventoryStatus": true,
+      "id": 4
+    },
+    {
+      "name": "Sofa",
+      "price": "$800",
+      "brand": "Nova",
+      "inventoryStatus": false,
+      "id": 5
+    }
+  ]
+}

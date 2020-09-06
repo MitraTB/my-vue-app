@@ -4,7 +4,7 @@
     <b-container>
       <b-row class="justify-content-center">
         <AddProduct @addProduct="addProduct" />
-        <ListProduct :products="productList" />
+        <ListProduct :products="productList" @deleteProduct="deleteProduct" @updateProduct="updateProduct" />
       </b-row>
     </b-container>
   </div>
@@ -46,6 +46,24 @@ export default {
         console.log("Error", error);
       }
     },
+    async deleteProduct(productId){
+     try{ 
+      await axios.delete(`http://localhost:3000/products/${productId}`);
+      this.getProductList();
+     }catch(error){
+        console.log('Error', error)
+     }
+    },
+    async updateProduct(updatedProduct){
+      console.log('****' , updatedProduct)
+      try{ 
+      await axios.put(`http://localhost:3000/products/${updatedProduct.id}` , updatedProduct);
+      this.getProductList();
+     }
+      catch(error){
+        console.log('Error', error)
+     }
+    }    
   },
   mounted() {
     this.getProductList();
